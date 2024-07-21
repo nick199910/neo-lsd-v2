@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity >=0.8.0;
-import {Test, console} from "forge-std/Test.sol";
 // Forked from Frax Finance: https://github.com/FraxFinance
 
 /// @notice Modern and gas efficient ERC20 + EIP-2612 implementation.
