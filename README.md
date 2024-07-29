@@ -27,12 +27,6 @@ $ forge build
 $ forge test
 ```
 
-### Format
-
-```shell
-$ forge fmt
-```
-
 ### Gas Snapshots
 
 ```shell
@@ -48,7 +42,17 @@ $ anvil
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/DeployToken.s.sol:DeployScript --chain-id 421614 --rpc-url $RPC_URL \
+    --etherscan-api-key $SCAN_API_KEY --verifier-url $EXPLORER_URL \
+    --broadcast --verify -vvvv
+```
+
+```markdown
+example:
+- **Network**: https://sepolia-rollup.arbitrum.io/rpc
+- **Explorer API Key**: Use your own
+- **Explorer**: https://api-sepolia.arbiscan.io/api
+- **Chain ID**: 421614
 ```
 
 ### Cast
